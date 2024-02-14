@@ -1,6 +1,7 @@
 {
   "name": "sfcdemo",
   "version": "1.0.0",
+  "type": "module",
   "description": "Demo an issue with @salesforce/core",
   "main": "index.js",
   "scripts": {
