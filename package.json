@@ -1,0 +1,14 @@
+{
+  "name": "sfcdemo",
+  "version": "1.0.0",
+  "description": "Demo an issue with @salesforce/core",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jason@jclark.org",
+  "license": "ISC",
+  "dependencies": {
+    "@salesforce/core": "^6.5.3"
+  }
+}
