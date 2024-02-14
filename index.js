@@ -5,7 +5,7 @@ import { OrgManager, Organization } from './OrgManager.js'
 async function openOrg(alias) {
     const orgManager = await OrgManager.getInstance();
     const orgInfo = orgManager.getOrgInfo(alias);
-    console.log("openOrg: orgInfo", orgInfo);
+    console.error("openOrg: orgInfo", orgInfo);
 
     const connection = await orgManager.getConnection(orgInfo.username, '36.0');
     console.log("Connection username: ", connection.username);

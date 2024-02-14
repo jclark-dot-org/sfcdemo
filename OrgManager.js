@@ -50,12 +50,12 @@ class OrgManager {
     }
 
     getConnection(username, apiVersion) {
-        console.log("getConnection: ", username);
+        console.error("getConnection: ", username);
         return new Promise((resolve, reject)=> {
             this.stateAggregator.orgs.read(username)
-                .then(authInfo => {console.log("authInfo: ", authInfo); return Org.create(authInfo)})
-                .then(org => {console.log("org: ", org); return org.getConnection(apiVersion)})
-                .then(conn => {console.log("conn: ", conn); resolve(conn)})
+                .then(authInfo => {console.error("authInfo: ", authInfo); return Org.create(authInfo)})
+                .then(org => {console.error("org: ", org); return org.getConnection(apiVersion)})
+                .then(conn => {console.error("conn: ", conn); resolve(conn)})
                 .catch(err => reject(err));
         });
     }
